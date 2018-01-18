@@ -1,0 +1,54 @@
+<div xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+    <section class="headerOne">
+        <nav class="navi row">
+            <div class="row headerSection">
+                <span class="row-item link learn"><span>Learn</span>
+                    <div class="filler-special"></div>
+                    <div class="dropdown_5columns">
+                          <v-link class="link" href="/videos/mathematics/1">Mathematics</v-link>
+                          <v-link class="link" href="/videos/science/1">Science</v-link>
+                          <v-link class="link" href="/videos/history/1">History</v-link>
+                          <v-link class="link" href="/videos/english/1">English</v-link>
+                          <v-link class="link" href="/videos/foreign-language/1">Foreign Language</v-link>
+                    </div>
+                </span>
+                <v-link class="row-item link" href="#"><span>Search</span></v-link>
+            </div>
+            <div class="row headerSection">
+                <v-link class="row-item link" href="#"><span>Teach</span></v-link>
+                <v-link class="row-item link" href="#"><span>Volunteer</span></v-link>
+                <span v-bind:class="{ 'row-item': true, link: true, dropdown: loggedIn }" v-on:click="togglePanel">
+                    <span>{{loginButtonDisplay()}}</span>
+                    <div class="dropdown-content">
+                          <span class="link" v-on:click="logout"><span>Logout</span></span>
+                    </div>
+                </span>
+            </div>
+        </nav>
+    </section>
+
+    <section id="side-panel" class="side-panel">
+        <div class="flex-container">
+            <h1>Login</h1>
+            <span class="link right close-panel" v-on:click="togglePanel"><span>&times;</span></span>
+            <div class="row input-line">
+                <label class="username">Username:</label>
+                <input type="text" v-model="username"></input>
+            </div>
+            <div class="row input-line">
+                <label class="password">Password:</label>
+                <input type="password" v-model="password"></input>
+            </div>
+            <div v-bind:class="{ row: true, 'input-line': true, 'color-red': true, inv: !errors }">{{errors}}</div>
+
+            <div class="login-buttons">
+                <div class="row">
+                    <span class="link" v-on:click="login"><span>Login</span></span>
+                </div>
+                <div class="row">
+                    <v-link class="link" href="/signup"><span>Create Account</span></v-link>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,17 @@
+<main-layout>
+    <component slot="header" v-bind:is="headerType" v-bind:title="display"></component>
+    <component slot="footer" v-bind:is="footerType"></component>
+
+    <!-- <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Second</a>
+        <a href="">Third</a>
+        <a href="">Last</a>
+    </div> -->
+
+    <img id="image" v-parallax.absY="0.4" src="assets/img/mountains.png" height="1080px" width="100%"/>
+    <div id="content" v-parallax.absY="0.05">
+        <img id="image3"  src="assets/img/howls_moving_castle.png" height="1080px" width="100%" />
+    </div>
+    <img id="image2" v-parallax.absY="0.2" src="assets/img/parrot.png" height="1080px" width="100%" />
+</main-layout>

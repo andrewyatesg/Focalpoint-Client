@@ -1,0 +1,30 @@
+<main-layout>
+    <component slot="header" v-bind:is="headerType" v-bind:title="display"></component>
+    <component slot="footer" v-bind:is="footerType"></component>
+    <section class="flex-container">
+        <div class="flex-container about-header">
+            <div class="row flex-container about-title">
+                <p class="flex-item">What is Focalpoint Learning?</p>
+            </div>
+            <div class="row flex-container about-buttons">
+              <a href="#whatwedo" class="flex-item">What We Do</a>
+              <a href="#whoweare" class="flex-item">Who We Are</a>
+              <a href="#help" class="flex-item">How You Can You Help Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="flex-container sections">
+        <div class="flex-container section whatwedo">
+            <h1 id="whatwedo">- What We Do -</h1>
+            <p>We teach people with specialized cirriculum.</p>
+        </div>
+        <div class="flex-container section whoweare">
+            <h1 id="whoweare">- Who We Are -</h1>
+            <p>We are based in Mission Vista.</p>
+        </div>
+        <div class="flex-container section help">
+            <h1 id="help">- How You Can You Help Us -</h1>
+            <p>You can make videos or volunteer.</p>
+        </div>
+    </section>
+</main-layout>

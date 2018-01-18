@@ -1,0 +1,92 @@
+.headerOne .navi {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.about-header {
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    color: white;
+    background-size: 100% 100%;
+    background-color: #5C6784;
+}
+
+.flex-container.about-title {
+
+}
+
+.flex-container.about-title > * {
+    margin: 0;
+    font-family: focalpoint;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about-buttons {
+    margin-top: 25px;
+}
+
+.about-buttons .flex-item:first-child {
+    margin-bottom: 10px;
+}
+
+.about-buttons .flex-item:last-child {
+    margin-top: 10px;
+}
+
+.about-buttons > .flex-item {
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: focalpoint;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    border-color: white;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.about-buttons > .flex-item:hover {
+    color: #25A0D5;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/**
+ * Sections
+ */
+
+h1, p {
+    font-family: focalpoint;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    max-width: 700px;
+}
+
+.sections {
+    width: 100%;
+    height: 900px;
+    background-color: white;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.whatwedo {
+
+}

@@ -1,0 +1,15 @@
+<main-layout xmlns:v-bind="http://www.w3.org/1999/xhtml">
+    <component slot="header" v-bind:is="headerType" v-bind:title="display"></component>
+    <component slot="footer" v-bind:is="footerType"></component>
+
+    <div class="videos-header">
+        <div class="row videos-container">
+            <div v-for="video in videos" class="video">
+                <h3>{{video.title}}</h3>
+                <img v-bind:src="video.previewUrl">
+                <span>{{video.desc}}</span>
+            </div>
+            <v-link v-bind:href="'/videos/' + subject + '/' + nextPage">next</v-link>
+        </div>
+    </div>
+</main-layout>

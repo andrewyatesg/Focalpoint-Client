@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;              /* establish flex container */
+    flex-direction: row;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    background-color: rgba(0,0,0,1);
+    z-index: 5;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    color: rgba(0,0,0,.5);
+    cursor: default;
+}
+
+#image {
+    z-index: -2;
+}
+
+#content {
+    height:1080px;
+    color:black;
+    background-color: rgba(193, 193, 193, 0.95);
+    position: relative;
+    z-index: 0;
+}
+
+#image2 {
+    z-index: 1;
+
+}
